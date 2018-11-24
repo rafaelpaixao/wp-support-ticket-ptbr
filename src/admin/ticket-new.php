@@ -30,7 +30,7 @@ endif;
 		?>
 		<section>
 			<label>&ensp;</label>
-			<button class="button button-primary button-large"><?php esc_html_e( 'Send', 'support-ticket' ); ?></button>
+			<button class="button button-primary button-large"><?php esc_html_e( 'Enviar', 'support-ticket' ); ?></button>
 		</section>
 	</form>
 </div>

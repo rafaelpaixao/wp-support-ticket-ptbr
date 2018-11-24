@@ -44,22 +44,22 @@ function sts_action_ticket_create() {
 	}
 
 	if ( isset( $post_data['user'] ) && empty( $post_data['user'] ) ) {
-		$_SESSION['tickets']['error'] = new WP_Error( 'ticket-user', esc_html__( 'Please enter your name.', 'support-ticket' ) );
+		$_SESSION['tickets']['error'] = new WP_Error( 'ticket-user', esc_html__( 'Por favor, informe o seu nome.', 'support-ticket' ) );
 		return false;
 	}
 
 	if ( isset( $post_data['email'] ) && ! is_email( $post_data['email'] ) ) {
-		$_SESSION['tickets']['error'] = new WP_Error( 'ticket-email', esc_html__( 'Please enter your email address.', 'support-ticket' ) );
+		$_SESSION['tickets']['error'] = new WP_Error( 'ticket-email', esc_html__( 'Por favor, informe o seu email.', 'support-ticket' ) );
 		return false;
 	}
 
 	if ( isset( $post_data['subject'] ) && empty( $post_data['subject'] ) ) {
-		$_SESSION['tickets']['error'] = new WP_Error( 'ticket-subject', esc_html__( 'Please enter a subject.', 'support-ticket' ) );
+		$_SESSION['tickets']['error'] = new WP_Error( 'ticket-subject', esc_html__( 'Por favor, informe o assunto.', 'support-ticket' ) );
 		return false;
 	}
 
 	if ( isset( $post_data['message'] ) && empty( $post_data['message'] ) ) {
-		$_SESSION['tickets']['error'] = new WP_Error( 'ticket-message', esc_html__( 'Please enter a message.', 'support-ticket' ) );
+		$_SESSION['tickets']['error'] = new WP_Error( 'ticket-message', esc_html__( 'Por favor, informe a descrição.', 'support-ticket' ) );
 		return false;
 	}
 

@@ -222,7 +222,7 @@ function sts_get_create_ticket_form_fields( $location ) {
 	$fields = array();
 	if ( ! is_user_logged_in() || 'edit' === $location ) {
 		$fields[] = array(
-			'label'    => __( 'Name', 'support-ticket' ),
+			'label'    => __( 'Nome', 'support-ticket' ),
 			'id'       => 'ticket-user',
 			'tag'      => 'input',
 			'type'     => 'text',
@@ -243,7 +243,7 @@ function sts_get_create_ticket_form_fields( $location ) {
 		);
 	}
 	$fields[] = array(
-		'label'    => __( 'Subject', 'support-ticket' ),
+		'label'    => __( 'Assunto', 'support-ticket' ),
 		'id'       => 'ticket-subject',
 		'tag'      => 'input',
 		'type'     => 'text',
@@ -253,7 +253,7 @@ function sts_get_create_ticket_form_fields( $location ) {
 		'required' => false,
 	);
 	$fields[] = array(
-		'label'    => __( 'Message', 'support-ticket' ),
+		'label'    => __( 'Descrição', 'support-ticket' ),
 		'id'       => 'ticket-message',
 		'tag'      => 'textarea',
 		'name'     => 'message',

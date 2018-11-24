@@ -19,24 +19,24 @@ $view_ticket = apply_filters( 'sts-view-ticket-url', $view_ticket, $ticket_id );
 echo esc_html(
 	sprintf(
 		// translators: %s is the name of the person to greet.
-		__( 'Hello %s,', 'support-ticket' ),
+		__( 'Olá %s,', 'support-ticket' ),
 		$user->data->display_name
 	)
 );
 	?>
 	</p>
 <p>
-	<?php esc_html_e( 'We have received your ticket and will contact you as soon as possible.', 'support-ticket' ); ?>
+	<?php esc_html_e( 'Nós recebemos o seu ticket e iremos atendê-lo o mais rápido possível.', 'support-ticket' ); ?>
 	<?php
 	echo esc_html(
 		sprintf(
 			// translators: %d is the ID of the ticket.
-			__( 'Your ticket is filed as #%d.', 'support-ticket' ), $ticket_id
+			__( 'O código do seu ticket é #%d.', 'support-ticket' ), $ticket_id
 		)
 	);
 	?>
 	<a href="<?php echo esc_url( $view_ticket ); ?>">
-		<?php esc_html_e( 'Click here to see your ticket.', 'support-ticket' ); ?>
+		<?php esc_html_e( 'Clique aqui para ver o seu ticket.', 'support-ticket' ); ?>
 	</a>
 </p>
-<p><?php esc_html_e( 'Thank you.', 'support-ticket' ); ?></p>
+<p><?php esc_html_e( 'Obrigado.', 'support-ticket' ); ?></p>
