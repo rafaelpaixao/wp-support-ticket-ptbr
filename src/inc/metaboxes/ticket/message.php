@@ -15,7 +15,7 @@ function sts_metabox_message_render( $post ) {
 		<p class="date">
 			<?php
 			// translators: %s is the name of the author.
-			printf( __( 'by %s', 'support-ticket' ), get_the_author() );
+			printf( __( 'por %s', 'support-ticket' ), get_the_author() );
 			?>
 			,
 			<?php the_date(); ?>, <?php the_time(); ?>
@@ -49,7 +49,7 @@ function sts_metabox_message_render( $post ) {
 							<span>
 								<?php
 								// translators: %s is the user name.
-								printf( __( 'by %s', 'support-ticket' ), $user->data->display_name );
+								printf( __( 'por %s', 'support-ticket' ), $user->data->display_name );
 								?>
 								,
 								<?php echo get_the_time( get_option( 'date_format' ), $post->ID ) . ', ' . get_the_time( get_option( 'time_format' ), $post->ID ); ?>
