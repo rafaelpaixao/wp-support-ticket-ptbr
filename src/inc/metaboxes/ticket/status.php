@@ -78,13 +78,13 @@ function sts_metabox_status_render() {
 		<p>
 			<?php
 			// translators: %s is the current status.
-			printf( __( 'Current status: %s', 'support-ticket' ), $current_status );
+			printf( __( 'Situação: %s', 'support-ticket' ), $current_status );
 			?>
 		</p>
 		<p>
 			<?php
 			// translators: %s is the name of the current agent.
-			printf( __( 'Current agent: %s', 'support-ticket' ), $current_agent->display_name );
+			printf( __( 'Responsável: %s', 'support-ticket' ), $current_agent->display_name );
 			?>
 		</p>
 		<?php
@@ -93,7 +93,7 @@ function sts_metabox_status_render() {
 			sts_print_select(
 				'ticket-status',
 				't[ticket-status]',
-				__( 'Update status', 'support-ticket' ),
+				__( 'Atualizar a situação', 'support-ticket' ),
 				$current_status_index,
 				array_map( function( $label, $value ) {
 					return (object) array(
@@ -107,7 +107,7 @@ function sts_metabox_status_render() {
 			sts_print_select(
 				'ticket-agent',
 				't[ticket-agent]',
-				__( 'Current agent', 'support-ticket' ),
+				__( 'Responsável', 'support-ticket' ),
 				$current_agent->ID,
 				array_map( function( $agent ) {
 					return (object) array(
