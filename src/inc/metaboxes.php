@@ -40,7 +40,7 @@ function sts_add_meta_boxes() {
 	if ( count( $metafields ) > 0 ) {
 		$repository->add(
 			'ticket-metafields',
-			__( 'Metafields', 'support-ticket' ),
+			__( 'Informações adicionais', 'support-ticket' ),
 			'sts_metabox_metafields_render',
 			'ticket-boxes',
 			'normal'
@@ -49,7 +49,7 @@ function sts_add_meta_boxes() {
 
 	$repository->add(
 		'ticket-answer',
-		__( 'Answer', 'support-ticket' ),
+		__( 'Resposta', 'support-ticket' ),
 		'sts_metabox_answer_render',
 		'ticket-boxes',
 		'normal'
@@ -57,7 +57,7 @@ function sts_add_meta_boxes() {
 
 	$repository->add(
 		'ticket-status',
-		__( 'Status', 'support-ticket' ),
+		__( 'Situação', 'support-ticket' ),
 		'sts_metabox_status_render',
 		'ticket-boxes',
 		'side'
@@ -66,7 +66,7 @@ function sts_add_meta_boxes() {
 	if ( current_user_can( 'update_tickets' ) ) {
 		$repository->add(
 			'ticket-privatenote',
-			__( 'Private Note', 'support-ticket' ),
+			__( 'Anotação privada', 'support-ticket' ),
 			'sts_metabox_privatenote_render',
 			'ticket-boxes',
 			'side'
@@ -76,7 +76,7 @@ function sts_add_meta_boxes() {
 	//Settings Metaboxes
 	$repository->add(
 		'ticket-setting-email-notification',
-		__( 'Email notification', 'support-ticket' ),
+		__( 'Notificação por email', 'support-ticket' ),
 		'sts_settings_metabox_email_notification_render',
 		'ticket-settings-email',
 		'normal'
@@ -84,7 +84,7 @@ function sts_add_meta_boxes() {
 
 	$repository->add(
 		'ticket-setting-user-agent',
-		__( 'Ticket agents', 'support-ticket' ),
+		__( 'Responsáveis', 'support-ticket' ),
 		'sts_settings_metabox_user_agent_render',
 		'ticket-settings-user',
 		'normal'
@@ -92,7 +92,7 @@ function sts_add_meta_boxes() {
 
 	$repository->add(
 		'ticket-setting-user-roles',
-		__( 'Roles & Capabilities', 'support-ticket' ),
+		__( 'Papéis', 'support-ticket' ),
 		'sts_settings_metabox_user_roles_render',
 		'ticket-settings-user',
 		'normal'
@@ -100,7 +100,7 @@ function sts_add_meta_boxes() {
 
 	$repository->add(
 		'ticket-setting-email-sender',
-		__( 'Email Sender', 'support-ticket' ),
+		__( 'Envio de email', 'support-ticket' ),
 		'sts_settings_metabox_email_sender_render',
 		'ticket-settings-email',
 		'normal'
@@ -108,7 +108,7 @@ function sts_add_meta_boxes() {
 
 	$repository->add(
 		'ticket-setting-email-wrapper',
-		__( 'Email wrapper', 'support-ticket' ),
+		__( 'Template do email', 'support-ticket' ),
 		'sts_settings_metabox_email_wrapper_render',
 		'ticket-settings-email',
 		'normal'
@@ -116,7 +116,7 @@ function sts_add_meta_boxes() {
 
 	$repository->add(
 		'ticket-setting-ticket-wrapper',
-		__( 'Additional ticket fields', 'support-ticket' ),
+		__( 'Campos adicionais para o formulário', 'support-ticket' ),
 		'sts_settings_metabox_metafields_render',
 		'ticket-settings-ticket',
 		'normal'
