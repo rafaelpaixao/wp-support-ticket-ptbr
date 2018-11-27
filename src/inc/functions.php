@@ -354,9 +354,9 @@ function sts_get_status_arr() {
 	 */
 	return apply_filters(
 		'sts-status-array', array(
-			esc_html__( 'Open', 'support-ticket' ),
-			esc_html__( 'Pending', 'support-ticket' ),
-			esc_html__( 'Close', 'support-ticket' ),
+			esc_html__( 'Aberto', 'support-ticket' ),
+			esc_html__( 'Pendente', 'support-ticket' ),
+			esc_html__( 'Fechado', 'support-ticket' ),
 		)
 	);
 }
