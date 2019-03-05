@@ -102,7 +102,7 @@ class STS_Tickets_Table extends WP_List_Table {
 	}
 
 	function no_items() {
-		_e( 'No tickets found.', 'support-ticket' );
+		_e( 'Nenhum ticket encontrado.', 'support-ticket' );
 	}
 
 	function extra_tablenav( $which ) {
